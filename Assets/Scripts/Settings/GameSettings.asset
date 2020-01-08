@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7504412a8c647af4d86e536914e6b142, type: 3}
   m_Name: GameSettings
   m_EditorClassIdentifier: 
-  movementSettings:
+  playerMovementSettings:
     speed: 0.2
+  playerCameraSettings:
+    sensitivity: 0.2
+    cameraIndentDegrees: 0.1

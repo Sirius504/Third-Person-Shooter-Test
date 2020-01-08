@@ -27,7 +27,7 @@ namespace Test.Model
         [Serializable]
         public class Settings
         {
-            public float speed;
+            public float speed = 0.2f;
         }
     } 
 }
