@@ -1,5 +1,6 @@
 using Test.Model;
 using UnityEngine;
+using UnityStandardAssets.Cameras;
 using Zenject;
 
 namespace Test.Installers
@@ -8,13 +9,15 @@ namespace Test.Installers
     public class GameSettings : ScriptableObjectInstaller<GameSettings>
     {
         public Movement.Settings playerMovementSettings;
-        public ThirdPersonCamera.Settings playerCameraSettings;
+        public FreeLookCam.Settings playerCameraSettings;
+        public ProtectCameraFromWallClip.Settings wallClipSettings;
 
 
         public override void InstallBindings()
         {
-            Container.BindInstance(playerMovementSettings);
-            Container.BindInstance(playerCameraSettings);
+            Container.BindInstance(playerMovementSettings).AsSingle();
+            Container.BindInstance(playerCameraSettings).AsSingle();
+            Container.BindInstance(wallClipSettings).AsSingle();
         }
     }
 }

@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: GameSettings
   m_EditorClassIdentifier: 
   playerMovementSettings:
-    speed: 0.2
+    speed: 10
+    rotationSpeed: 50
   playerCameraSettings:
-    sensitivity: 0.2
-    cameraIndentDegrees: 0.1
+    sensitivity: 1.5
+    turnSmoothing: 20
+    tiltMax: 75
+    tiltMin: 15
+    lockCursor: 0

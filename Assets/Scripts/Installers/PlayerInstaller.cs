@@ -8,7 +8,6 @@ namespace Test.Installers
         public override void InstallBindings()
         {
             Container.Bind<Movement>().FromComponentInHierarchy().AsSingle();
-            Container.Bind<ThirdPersonCamera>().FromComponentInHierarchy().AsSingle();
         }
     } 
 }
